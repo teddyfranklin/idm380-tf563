@@ -1,0 +1,7 @@
+.rte p,.rte li,.shopify-policy__body p,.shopify-policy__body li {
+    font-family: var(--font-body);
+    font-weight: var(--font-body-weight);
+    font-style: var(--font-body-style);
+    line-height: var(--line-height-body);
+    letter-spacing: var(--font-body-base-letter-spacing)
+}
