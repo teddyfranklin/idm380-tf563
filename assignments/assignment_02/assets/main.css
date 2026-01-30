@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    text-decoration: none;
 }
 
 
@@ -26,7 +25,6 @@
 }
 
 .page {
-    background-color: #ffffff;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -47,7 +45,7 @@
     font-weight: var(--font-body-weight);
     font-style: var(--font-body-style);
     font-size: 1.167rem;
-    line-height: 2rem;
+    line-height: 1.7505rem;
     letter-spacing: .04rem;
     word-spacing: .3rem;
     color: #22292D;
@@ -55,14 +53,14 @@
 
 .page__heading {
     font-family: "Poppins-Bold", sans-serif;
-    font-weight: bold;
+    font-weight: var(--font-heading-weight);
     font-style: var(--font-heading-style);
-    font-size: 3rem;
+    font-size: 2.25rem;
     line-height: 2.625rem;
     letter-spacing: .04rem;
     word-spacing: .3rem;
-    margin-bottom: 4rem;
-    margin-top: 6rem;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
     color: #22292D;
 }
 
@@ -117,31 +115,4 @@
 .header__row-segment {
     display: flex;
     align-items: center;
-}
-
-.header__skip-to-content {
-    color: white;
-}
-
-.header__skip-to-content:focus {
-    color: black
-}
-
-.announcement-bar {
-    width: 100%;
-    height: 3rem;
-    background-color: #E32C2B;
-    color: white;
-    text-align: center;
-    padding: .5rem 1rem;
-    font-size: 1rem;
-    line-height: 1.5rem;
-}
-
-.announcement-bar p {
-    font-family: "Poppins-Medium", sans-serif;
-    color: #ffffff;
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-    letter-spacing: .04rem;
 }
