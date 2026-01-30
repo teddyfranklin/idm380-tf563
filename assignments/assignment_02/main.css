@@ -39,6 +39,8 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 60rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
 }
 
 
@@ -76,6 +78,7 @@
     justify-content: center;
     border-bottom: .1rem solid #E32C2B;
     padding-bottom: 1.5rem;
+    margin-top: 2rem;
     flex-wrap: wrap;
 }
 
