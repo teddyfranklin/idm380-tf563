@@ -162,6 +162,8 @@
 }
 
 .footer__group a {
+    display: flex;
     color: #ffffff;
     font-family: "Poppins-Medium", sans-serif;
+    margin-top: 1.4rem;
 }
