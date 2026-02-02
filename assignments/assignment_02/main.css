@@ -148,3 +148,20 @@
     line-height: 1.75rem;
     letter-spacing: .04rem;
 }
+
+.footer__group {
+    display: flex;
+    background-color: #22292D;
+    color: #ffffff;
+    font-family: "Poppins-Medium", sans-serif;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer__group a {
+    color: #ffffff;
+    font-family: "Poppins-Medium", sans-serif;
+}
