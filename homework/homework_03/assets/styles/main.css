@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-dark: #120F12;
+    --color-light: #FFF9EA;
+    --neutral-gray: #878287;
+    --accent-red: #CD1E35;
+    --accent-blue: #4334DE;
+    --accent-red-light: #FF5C86;
+    --accent-blue-light: #978DFF;
+    --accent-red-dark: #581123;
+    --accent-blue-dark: #1F1776;
+    --text-body: 1.5rem;
+    --text-heading: 2.5rem; 
+    --body-font: Tahoma, Verdana, sans-serif;
+    --heading-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: var(--color-dark);
+    color: var(--color-light);
+    margin: 2rem;
+
+}
+
+.nav_header {
+    padding: 20px;
+    text-align: center;
+}
+
+.nav_header nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: var(--neutral-gray);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(10, auto);
+    height: 80vh;
+    row-gap: 3rem;
+}
+
+.hello {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: center;
+    justify-self: left;
+}
+
+.bio {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    align-self: center;
+    justify-self: center;
+}
+
+
+.case_studies_header {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+.personal_projects_header {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+}
+
+.artwork_header {
+    grid-column: 1 / 2;
+    grid-row: 9 / 10;
+}
+
+body h2 {
+    font-family: var(--heading-font);
+    font-size: var(--text-heading);
+    margin-bottom: 10px;
+}
+
+body p {
+    font-family: var(--body-font);
+    font-size: var(--text-body);
+    line-height: 1.6;
+}
+
+body h1 {
+    font-family: var(--heading-font);
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
