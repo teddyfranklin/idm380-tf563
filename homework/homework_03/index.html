@@ -8,35 +8,39 @@
 </head>
 <body>
     <a href="main-content" class="skip">skip to content</a>
-    <header class="nav_header">
-        <ul>
+    <header class="nav_header" aria-label="navigation header">
+        <ul aria-label="navigation buttons">
             <nav tabindex="0">
-                <li><button>Case Studies</button></li>
-                <li><button>Personal Projects</button></li>
-                <li><button>Artwork</button></li>
-                <li><button>Home</button></li>
-                <li><button>Contact</button></li>
+                <li><button aria-label="Case studies">Case Studies</button></li>
+                <li><button aria-label="personal projects">Personal Projects</button></li>
+                <li><button aria-label="artwork">Artwork</button></li>
+                <li><button aria-label="home">Home</button></li>
+                <li><button aria-label="contact">Contact</button></li>
             </nav>
         </ul>
     </header>
 
     <main id="main_content">
-        <section class="biography"></section>
-            <header class="hello"><h1 tabindex="-1">Hi, I'm Teddy.</h1></header>
-            <article class="bio"><p tabindex="0">This mockup shows what the landing page will look like when the user has their browser's preference set to dark mode. For the final, this is where my short biography will go.</p></article>
-            <img class="drawing"></img>
-        <section class="case_studies"></section>
-            <header class="case_studies_header"><h2 tabindex="0">UX Case Studies</h2></header>
-            <img tabindex="0" class="case_study_1" src="assets/images/wiki_redesign.png"></img>
-            <img tabindex="0" class="case_study_2" src="assets/images/wdldsivy.jpg"></img>
-        <section class="personal_projects"></section>
-            <header class="personal_projects_header"><h2 tabindex="0">Personal Projects</h2></header>
-            <img tabindex="0" class="personal_project_1" src="assets/images/image12.jpeg" alt="game mockup">
-            <img tabindex="0" class="personal_project_2" src="assets/images/image23.jpeg" alt="webcomic reader">
-        <section class="artwork"><h2 tabindex="0">Artwork</h2></section>
-            <header class="artwork_header"></header>
-            <img tabindex="0" class="digital_art" src="assets/images/IMG_0086.jpg" alt="digital art">
-            <img tabindex="0" class="sketchbook" src="assets/images/IMG_1031_25.jpg">
+        <section class="biography" aria-label="biography section"></section>
+            <header class="hello"><h1 tabindex="0" aria-label="hello">Hi, I'm Teddy.</h1></header>
+            <p class="blurb" tabindex="0">This mockup shows what the landing page will look like when the user has their browser's preference set to dark mode. For the final, this is where my short biography will go.</p>
+            <section class="blank space" aria-label="blank space"></section>
+        <section class="case_studies" aria-label="case studies"></section>
+            <header class="case_studies_header"><h2 tabindex="0" aria-label="case studies heading">UX Case Studies</h2></header>
+            <img tabindex="0" class="case_study_1" src="assets/images/wiki_redesign.png" alt="thumbnail of a redesigned wikipedia home page"></img>
+            <img tabindex="0" class="case_study_2" src="assets/images/wdldsivy.jpg" alt="image of a stone building covered in ivy"></img>
+        <section class="personal_projects" aria-label="personal projects section"></section>
+            <header class="personal_projects_header" aria-label="Personal projects heading"><h2 tabindex="0">Personal Projects</h2></header>
+            <img tabindex="0" class="personal_project_1" src="assets/images/image12.jpeg" alt="image of an eyeball with purple lines emanating from it">
+            <img tabindex="0" class="personal_project_2" src="assets/images/image23.jpeg" alt="image of a green and purple face">
+        <section class="artwork" aria-label="artwork section"></section> 
+            <header class="artwork_header" aria-label="artwork heading"><h2 tabindex="0">Artwork</h2></header>
+            <container class="digital_art_container">
+                <img tabindex="0" class="digital_art" src="assets/images/IMG_0086.jpg" alt="digital art">\
+            </container>
+            <container class="sketchbook_container">
+                <img tabindex="0" class="sketchbook" src="assets/images/IMG_1031_25.jpg">
+            </container>
     </main>
 </body>
 </html>
