@@ -10,10 +10,11 @@
     --neutral-gray: #878287;
     --accent-red: #CD1E35;
     --accent-blue: #4334DE;
-    --accent-red-light: #FF5C86;
+    --accent-red-light: #f8a5ba;
     --accent-blue-light: #978DFF;
     --accent-red-dark: #581123;
     --accent-blue-dark: #1F1776;
+    --text-body-small: 1.5rem;
     --text-body: 2rem;
     --text-heading: 3.3rem; 
     --text-big-heading: 4rem;
@@ -86,9 +87,70 @@ body {
 form {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     gap: 2rem;
+    margin: 0;
+    padding: 0;
 }
+
+input, textarea {
+    padding: 1rem;
+    font-size: var(--text-body-small);
+    font-family: var(--body-font);
+    font-weight: 400;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    display: flex;
+    background: var(--accent-red);
+    color: var(--color-light);
+    border: var(color-light);
+    padding: .5rem 1rem;
+    justify-content: center;
+    font-family: var(--body-font);
+    font-size: var(--text-nav);
+    border-radius: 10px;
+    width: fit-content;
+}
+
+label {
+    font-family: var(--body-font);
+    font-size: 1.6rem;
+}
+
+input[aria-invalid="true"] {
+    border: 5px solid var(--accent-red);
+    background-color: var(--accent-red-light);
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+legend {
+    background-color: #4334DE;
+    font-family: var(--body-font);
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+}
+
+.error-message {
+    font-family: var(--body-font);
+    color: var(--accent-red-light);
+    font-size: 1.2rem;
+}
+
+#success-message {
+    font-family: var(--body-font);
+    font-size: 1.6rem;
+    color: var(--accent-blue-light);
+}
+
 
 @media (max-width: 768px) {
 

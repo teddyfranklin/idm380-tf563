@@ -24,45 +24,87 @@
     </header>
 
     <main id="main_content">
-        <form>
-            <label  for="firstName">Enter your first name</label>
+        <form novalidate aria-label="Contact form">
+            <fieldset>
+                <legend>Contact Form</legend>
+            <label  for="firstName">
+                Enter your first name
+                <span class="required-label" aria-label="required">*</span>
+            </label>
             <input  type="text" 
-                    id="firstName" 
-                    name="firstName"
-                    required
-                    aria-required="true"
-                    aria-invalid="true"
-                    aria-describedby="firstName-error">
+                id="firstName" 
+                name="firstName"
+                required
+                aria-required="true"
+                aria-invalid="false"
+                aria-describedby="firstName-error">
+            <span
+                id="firstName-error"
+                class="error-message"
+                role="alert"
+                aria-live="polite">
+            </span>
 
-            <span id="firstName-error" class="error-message" role="alert">Please enter your first name.</span>
+            <label  for="lastName">
+                Enter your last name
+                <span class="required-label" aria-label="required">*</span>
+            </label>
+            <input  
+                type="text" 
+                id="lastName" 
+                name="lastName"
+                required
+                aria-required="true"
+                aria-invalid="false"
+                aria-describedby="lastName-error">
+            <span
+                id="lastName-error"
+                class="error-message"
+                role="alert"
+                aria-live="polite">
+            </span>
 
-            <label  for="lastName">Enter your last name</label>
-            <input  type="text" 
-                    id="lastName" 
-                    name="lastName"
-                    required
-                    aria-required="true"
-                    aria-invalid="true"
-                    aria-describedby="lastName-error">
+            <label  for="email">
+                Enter your email address
+                <span class="required-label" aria-label="required">*</span>
+            </label>
+            <input  
+                type="email" 
+                id="email" 
+                name="email"
+                required
+                aria-required="true"
+                aria-invalid="false"
+                aria-describedby="email-error"
+                autocomplete="email">
+            <span
+                id="email-error"
+                class="error-message"
+                role="alert"
+                aria-live="polite">
+            </span>
 
-            <label  for="email">Enter your email address</label>
-            <input  type="email" 
-                    id="email" 
-                    name="email"
-                    required
-                    aria-required="true"
-                    aria-invalid="true"
-                    aria-describedby="email-error">
-
-            <label  for="message">Enter your message</label>
-            <input  type="text" 
-                    id="message" 
-                    name="message"
-                    required
-                    aria-required="true"
-                    aria-invalid="true"
-                    aria-describedby="message-error">
-            
+            <label for="message">
+                Enter your message
+                <span class="required-label" aria-label="required">*</span>
+            </label>
+            <input  
+                type="text" 
+                id="message" 
+                name="message"
+                required
+                aria-required="true"
+                aria-invalid="false"
+                aria-describedby="message-error">
+            <span
+                id="message-error"
+                class="error-message"
+                role="alert"
+                aria-live="polite">
+            </span>
+            </fieldset>
+            <p id="success-message" aria-live="polite" style="display:none;"></p>
+            <button class="submitButton" aria-text="Submit button">Submit</button>
         </form>
     </main>
 
