@@ -124,6 +124,11 @@ input[aria-invalid="true"] {
     background-color: var(--accent-red-light);
 }
 
+textarea[aria-invalid="true"] {
+    border: 5px solid var(--accent-red);
+    background-color: var(--accent-red-light);
+}
+
 fieldset {
     border: none;
     display: flex;
