@@ -11,9 +11,7 @@
     <header class="nav_header" aria-label="navigation header">
         <nav class="desktop-buttons" aria-label="navigation buttons">
             <ul>
-                <li><button aria-label="Case studies">Case Studies</button></li>
                 <li><a href="about.html"><button aria-label="about">About</button></li>
-                <li><button aria-label="artwork">Artwork</button></li>
                 <li><a href="index.html"><button aria-label="home">Home</button></a></li>
                 <li><a href="contact.html"><button aria-label="contact">Contact</button></a></li>
             </ul>
@@ -23,21 +21,22 @@
         </nav>
     </header>
 
-    <main id="main_content">
-        <form novalidate aria-label="Contact form">
-            <fieldset>
-                <legend class="contactHeading">Contact Form</legend>
-            <label  for="firstName">
+<main id="main_content">
+    <form novalidate aria-label="Contact form">
+        <fieldset>
+            <legend class="contactHeading">Contact Form</legend>
+
+            <label for="firstName">
                 Enter your first name
-                <span class="required-label" aria-label="required">*</span>
+                <span class="required-label" aria-hidden="true">*</span>
             </label>
-            <input  type="text" 
-                id="firstName" 
+            <input type="text"
+                id="firstName"
                 name="firstName"
                 required
                 aria-required="true"
                 aria-invalid="false"
-                aria-describedby="firstName-error">
+                aria-describedby="firstName-error"/>
             <span
                 id="firstName-error"
                 class="error-message"
@@ -45,18 +44,17 @@
                 aria-live="polite">
             </span>
 
-            <label  for="lastName">
+            <label for="lastName">
                 Enter your last name
-                <span class="required-label" aria-label="required">*</span>
+                <span class="required-label" aria-hidden="true">*</span>
             </label>
-            <input  
-                type="text" 
-                id="lastName" 
+            <input type="text"
+                id="lastName"
                 name="lastName"
                 required
                 aria-required="true"
                 aria-invalid="false"
-                aria-describedby="lastName-error">
+                aria-describedby="lastName-error"/>
             <span
                 id="lastName-error"
                 class="error-message"
@@ -64,19 +62,18 @@
                 aria-live="polite">
             </span>
 
-            <label  for="email">
+            <label for="email">
                 Enter your email address
-                <span class="required-label" aria-label="required">*</span>
+                <span class="required-label" aria-hidden="true">*</span>
             </label>
-            <input  
-                type="email" 
-                id="email" 
+            <input type="email"
+                id="email"
                 name="email"
                 required
                 aria-required="true"
                 aria-invalid="false"
                 aria-describedby="email-error"
-                autocomplete="email">
+                autocomplete="email"/>
             <span
                 id="email-error"
                 class="error-message"
@@ -86,11 +83,10 @@
 
             <label for="message">
                 Enter your message
-                <span class="required-label" aria-label="required">*</span>
+                <span class="required-label" aria-hidden="true">*</span>
             </label>
-            <textarea  
-                type="text" 
-                id="message" 
+            <textarea
+                id="message"
                 name="message"
                 required
                 aria-required="true"
@@ -103,11 +99,13 @@
                 role="alert"
                 aria-live="polite">
             </span>
-            </fieldset>
-            <p id="success-message" aria-live="polite" style="display:none;"></p>
-            <button class="submitButton" aria-text="Submit button">Submit</button>
-        </form>
-    </main>
+
+        </fieldset>
+
+        <p id="success-message" aria-live="polite" aria-atomic="true" style="display:none;"></p>
+        <button class="submitButton" aria-label="Submit contact form" type="submit">Submit</button>
+    </form>
+</main>
 
     <script src="assets/scripts/main.js"></script>
 </body>

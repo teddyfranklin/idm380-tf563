@@ -8,7 +8,7 @@
     --color-dark: #120F12;
     --color-light: #FFF9EA;
     --neutral-gray: #878287;
-    --accent-red: #CD1E35;
+    --accent-red: #8a0819;
     --accent-blue: #4334DE;
     --accent-red-light: #FF5C86;
     --accent-blue-light: #978DFF;
@@ -140,6 +140,20 @@ main {
     border-radius: 2rem;
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--color-dark);
+        color: var(--color-light);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: var(--color-light);
+        color: var(--color-dark);
+    }
+}
+
 
 @media (max-width: 768px) {
 
@@ -148,20 +162,6 @@ main {
     --text-heading: 2rem;
     --text-big-heading: 3rem;
   }
-
-  .desktop-buttons button {
-    display: none;
-  }
-
-  .menu-button {
-    display: block;
-    background: var(--accent-red);
-    color: var(--color-light);
-    border: var(color-light);
-    padding: .5rem 1rem;
-    font-family: var(--body-font);
-    font-size: var(--text-nav);
-}
 
     main {
         display: grid;
