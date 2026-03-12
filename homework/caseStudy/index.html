@@ -7,46 +7,50 @@
     <link rel="stylesheet" href="assets/styles/main.css">
 </head>
 <body>
-    <a href="#main_content" class="skip">skip to content</a>
+    <a href="#overviewHeading" class="skip">skip to content</a>
 
-    <main id="main_content">
-        <img class="hero" src="assets/images/aboutImage.JPG">
-        <section class="overviewSection">
-            <h1 class="overviewHeading" tabindex="0">Overview</h1>
-            <p class="overviewText"> ajkdasjkbdf asknfjkasfasjkfasjkfn asfnasfasjkfnjas</p>
+    <main>
+        <img class="hero" src="assets/images/aboutImage.JPG" alt="The project's About page featuring an eye graphic with overlaid blocks of text.">
+
+        <section class="overviewSection" aria-labelledby="overviewHeading">
+            <h1 class="overviewHeading" id="overviewHeading" tabindex="0">Overview</h1>
+            <p class="overviewText">This case study recounts the insights gleaned while creating a web-accessible site for a scripting class. Each assignment we were given covered a different topic in accessibility. Putting these assignments together culminated in a fully functional live site that accounts for the large swath of the population requiring these features. Extra emphasis was put on keyboard navigation, accessible typography, and semantic HTML.</p>
         </section>
-        <section class="contextSection">
-            <h1 class="contextHeading">Context</h1>
+
+        <section class="contextSection" aria-labelledby="contextHeading">
+            <h1 class="contextHeading" id="contextHeading" tabindex="0">Context</h1>
             <h2 class="backgroundHeading">Background</h2>
-            <p class="backgroundText">This case study recounts the insights gleaned while creating a web-accessible site for a scripting class. Each assignment we were given covered a different topic in accessibility. Putting these assignments together culminated in a fully functional live site that accounts for the large swath of the population requiring these features. Extra emphasis was put on keyboard navigation, accessible typography, and semantic HTML.</p>
+            <p class="backgroundText">This project was done for the recently introduced Scripting for Accessibility elective. This class served as an introduction to all of the main topics and techniques within the realm of web accessibility. It showed us how to make web pages readable for a wide variety of users.</p>
             <h2 class="problemHeading">The Problem</h2>
             <p class="problemText">This project exists to exemplify how sites should be designed to account for users with disabilities. Disabilities impact people in drastically different ways, which requires developers to use a wide array of tools as a means to meet user needs. Visually impaired users require highly visible typography, physically impaired users require keyboard navigation to use sites, and cognitively impaired users require sites to have an easily understandable structure. The needs of those with disabilities are incredibly diverse, and this site acts as a guide for best practices when designing for these groups.</p>
             <h2 class="goalsHeading">Goals</h2>
             <p class="goalsText">The most tangible objective for this project is a functional site that is easily navigable using only a keyboard. This requires the employment of tools such as aria labels, skip-content buttons, and semantic HTML. The other main performance metric applicable to this project is its adherence to the WCAG. This document specifies appropriate color contrast values, fonts, and general best practices.</p>
         </section>
-        <section class="processSection">
-            <h1 class="processHeading" tabindex="0">Process</h1>
+
+        <section class="processSection" aria-labelledby="processHeading">
+            <h1 class="processHeading" id="processHeading" tabindex="0">Process</h1>
             <h2 class="sketchesHeading">Sketches</h2>
             <p class="sketchesText">Below are drawings I made to plan the layouts for certain pages. I like to define content areas on pen/paper before going directly into CSS. This process saves me the time of creating assets in figma and forces me to create a mental model for CSS.</p>
-            <div class="sketchesCollection"></div>
+            <div class="sketchesCollection" role="region" aria-label="Sketch drawings of page layouts"></div>
             <h2 class="typographyHeading">Color and Typography</h2>
-            <p class="typographyText">Our first assignment was to create a color scheme and typography plan that met WCA guidelines. I chose a sens-serif typeface and an easily parsable color scheme to ensure readers would not have difficulty understanding any of the content.</p>
+            <p class="typographyText">Our first assignment was to create a color scheme and typography plan that met WCA guidelines. I chose a sans-serif typeface and an easily parsable color scheme to ensure readers would not have difficulty understanding any of the content.</p>
             <h2 class="prototypeHeading">Prototypes</h2>
             <p class="prototypeText1">Our second assignment was to strip an existing live website of its CSS and add accessibility features to it. Without understanding how much of an undertaking this would be, I decided to do this assignment on a shopify site with over 10k lines of HTML. I stayed up until about 4am trying to complete this assignment, and the final product left much to be desired.</p>
-            <img class="prototypeImage1" src="assets/images/assignmentImage02.JPG">
+            <img class="prototypeImage1" src="assets/images/assignmentImage02.JPG" alt="First attempt at Assignment 02 showing a bare-bones HTML page stripped of all styling.">
             <p class="prototypeText2">Our following assignments were to expand on this site by adding new pages and accessibility features. I wisely decided to do these assignments on a site I built from scratch.</p>
-            <!-- <img class="prototypeImage2"> -->
             <h2 class="codeHeading">Code</h2>
             <p class="codeText">The hardest coding assignment for this course was the form validation. This required the use of an array of objects for the text fields, and a separate method for the email field.</p>
         </section>
-        <section class="solutionSection">
-            <h1 class="solutionHeading" tabindex="0">Solution</h1>
+
+        <section class="solutionSection" aria-labelledby="solutionHeading">
+            <h1 class="solutionHeading" id="solutionHeading" tabindex="0">Solution</h1>
             <p class="solutionText">The final project was the result of putting all of these pages together on the same site, then adding a bit of polish.</p>
         </section>
-        <section class="resultsSection">
-            <h1 class="resultsHeading" tabindex="0">Results</h1>
-            <p class="resultsText">The final page is keyboard navigable, visually accessible, and exhaustively follows the necessary WCA guidelines. Every color combination had its contrast tested, every html element is semantic, and all links work. It may not be the most complicated or flashy site out there, but I am certainly proud of how far I came with this project when considering where I started.</p>
-            <img class="resultsImage" src="assets/images/homePage380.JPG">
+
+        <section class="resultsSection" aria-labelledby="resultsHeading">
+            <h1 class="resultsHeading" id="resultsHeading" tabindex="0">Results</h1>
+            <p class="resultsText">The final page is keyboard navigable, visually accessible, and exhaustively follows the necessary WCA guidelines. Every color combination had its contrast tested, every HTML element is semantic, and all links work. It may not be the most complicated or flashy site out there, but I am certainly proud of how far I came with this project when considering where I started.</p>
+            <img class="resultsImage" src="assets/images/homePage380.JPG" alt="The project's finished landing page showing a spacious layout with red and blue heading elements.">
         </section>
     </main>
 </body>

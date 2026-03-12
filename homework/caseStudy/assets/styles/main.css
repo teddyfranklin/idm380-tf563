@@ -5,8 +5,8 @@
 }
 
 :root {
-    --color-dark: #120F12;
-    --color-light: #FFF9EA;
+    --color-dark: #080808;
+    --color-light: #f3f3f3;
     --neutral-gray: #878287;
     --accent-red: #CD1E35;
     --accent-blue: #4334DE;
@@ -14,6 +14,7 @@
     --accent-blue-light: #978DFF;
     --accent-red-dark: #581123;
     --accent-blue-dark: #1F1776;
+    --color-yellow: #e0dd0d;
     --text-body: 1.75rem;
     --h1-size: 3.5rem;
     --h2-size: 2.5rem;
@@ -251,6 +252,48 @@ p {
     line-height: 1.6;
     color:#878287
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--color-dark);
+        color: var(--color-light);
+    }
+
+    h1 {
+        padding: .5rem;
+        background-color: var(--color-yellow);
+        color: var(--color-dark);
+    }
+
+    h2 {
+    border: 0;
+    border-bottom: var(--color-yellow);
+    border-style: dashed;
+    padding-bottom: .3rem;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: var(--color-light);
+        color: var(--color-dark);
+    }
+
+    h1 {
+    padding: .5rem;
+    background-color: var(--color-dark);
+    color: var(--color-yellow);
+    }
+
+    h2 {
+        border: 0;
+        border-bottom: var(--color-dark);
+        border-style: dashed;
+        padding-bottom: .3rem;
+    }
+
+}
+
 
 @media (max-width: 768px) {
 
