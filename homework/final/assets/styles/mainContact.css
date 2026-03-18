@@ -64,8 +64,7 @@ body {
     border-radius: 2rem;
 }
 
-
-.nav_header button {
+.nav_header a {
     background: var(--accent-red-dark);
     color: var(--color-light);
     border: var(color-light);
@@ -73,9 +72,10 @@ body {
     font-family: var(--body-font);
     font-size: var(--text-nav);
     border-radius: 10px;
+    text-decoration: none;
 }
 
-.nav_header button:hover {
+.nav_header a:hover {
     background: var(--color-light);
     color: var(--accent-red-dark);
     border: var(color-light);
@@ -83,16 +83,6 @@ body {
     font-family: var(--body-font);
     font-size: var(--text-nav);
     border-radius: 10px;
-}
-
-.menu-button {
-    display: none;
-    background: var(--accent-red);
-    color: var(--color-light);
-    border: var(color-light);
-    padding: .5rem 1rem;
-    font-family: var(--body-font);
-    font-size: var(--text-nav);
 }
 
 .skip {

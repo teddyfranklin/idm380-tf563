@@ -9,15 +9,12 @@
 <body>
     <a href="#main_content" class="skip">skip to content</a>
     <header class="nav_header" aria-label="navigation header">
-        <nav class="desktop-buttons" aria-label="navigation buttons">
-            <ul>
-                <li><a href="about.html"><button aria-label="about">About</button></li>
-                <li><a href="index.html"><button aria-label="home">Home</button></a></li>
-                <li><a href="contact.html"><button aria-label="contact">Contact</button></a></li>
+        <nav class="desktop-buttons" aria-label="navigation list">
+            <ul aria-label="navigation tabs">
+                <li aria-label="home"><a href="index.html">Home</a></li>
+                <li aria-label="about"><a href="about.html">About</a></li>
+                <li aria-label="contact"><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-        <nav aria-label="Mobile menu section">
-            <button class="menu-button" aria-label="menu">Menu</button>
         </nav>
     </header>
 
@@ -26,7 +23,7 @@
         <fieldset>
             <legend class="contactHeading">Contact Form</legend>
 
-            <label for="firstName">
+            <label for="firstName" aria-label="First name">
                 Enter your first name
                 <span class="required-label" aria-hidden="true">*</span>
             </label>
